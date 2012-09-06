@@ -23,64 +23,405 @@
 <!-- presentation -->
 <div id="presentation">
 
+    <!-- -->
+
     <div class="slide">
         <div class="section">Kollokviegenerator, <br />sommer 2012</div>
     </div>
 
+    <!-- -->
+    
     <div class="slide">    
-        <div class="title">Valg av navn</div>
+        <div class="title"></div>
+        
+        <p>Presentasjonen kommer til å handle om:</p>
+        
+        <ol class="question">
+            <li><span style="text-decoration: underline">Hva</span> vi har gjort?</li>
+            <li><span style="text-decoration: underline">Hvorfor</span> har vi gjort det slik?</li>
+            <li><span style="text-decoration: underline">Hva</span> er det som gjenstår?</li>
+        </ol>
+        
     </div>
 
+    <!-- -->
+    
     <div class="slide">    
-        <div class="title">Målet med prosjektet</div>
+        <div class="title"></div>
         
+        
+        
+    </div>
+
+    <!-- -->
+
+    <div class="slide">    
+        <div class="title">Retningslinjene (1)</div>
+        
+        <p>Vi tar utgangspunkt fra et av målene i stillingsbeskrivelsen:</p>
+        
+        <p style="font-style: italic;">
+        "samt å foreta en grundig gjennomgang av hva som skal til for at 
+        prototypen kan utvikles til et fullstendig system som kan tas i bruk 
+        av hele insituttet (eller universitetet)"</p>
+        
+        <p>Før man besvarer dette og forklarer hva som skal til før systemet
+        kan tas i bruk, må vi vite →</p>
+        
+    </div>
+
+    <!-- -->
+    
+    <div class="slide">    
+        <div class="title">— Hva er systemet?</div>
+        
+        <p>Vi hadde flere alternativer å ta utgangspunkt i →</p>
+        
+    </div>
+
+    <!-- -->
+    
+    <div class="slide">    
+        <div class="title">— Hva er systemet? (1)</div>
+       
+        <ol><li>Visjonen til Ilya</li></ol>
+        
+        <img src="./img/visjonen-til-ilya.jpg" alt="" class="illustration" />
+
+    </div>
+    
+    <!-- -->
+    
+    <div class="slide">    
+        <div class="title">— Hva er systemet? (2)</div>
+       
+        <ol start="2"><li>Andres reaksjon</li></ol>
+        
+        <img src="./img/andres-reaksjon.jpg" alt="" class="illustration" />
+
+    </div>
+    
+    <!-- -->
+
+    <div class="slide">    
+        <div class="title">— Hva er systemet? (3)</div>
+       
+        <ol start="3"><li>Prototypen</li></ol>
+        
+        <img src="./img/prototypen.jpg" alt="" class="illustration" />
+
+    </div>
+    
+    <!-- --> 
+    
+    <div class="slide">    
+        <div class="title">Retningslinjene (2)</div>
+       
+        <ol class="question">
+        	<li>Hva var inspirasjonen til prosjektet?</li>
+        	<li>Hvor mye frihet hadde vi?</li>
+        </ol>
+        
+        <p>Veldig vage krav, enorm frihet.</p>
+        
+        <p>Under en av diskusjonene nevnte Roger to viktige nøkkelord:
+        </p>
+        
+        <p><span class="keyword">sukker.no</span> og
+        <span class="keyword">raidfinder</span></p>
+        
+        <p>Derfor skiftet vi fokuset fra en generisk oppslagstavle, mot
+        et enklere og mer tilfeldig matchesystem.</p>
+        
+        <p>Videre: <span class="keyword">hva</span> og <span class="keyword">hvorfor</span>, ikke hvordan (ingen tekniske detaljer) →</p>
+        
+
+    </div>
+
+    <!-- -->     
+
+    <div class="slide">    
+        <div class="title">Avgjørelsene</div>
         <ul class="question">
-            <li>Hva var målet med prosjektet?</li>
+            <li>Hva handlet prosjektet om?</li>
+            <li>Hvilket navn valgte vi?</li>
+        </ul>
+
+        <p>Fra alternativene som: 
+            <i>partify</i>, 
+            <i>bro</i>, 
+            <i>sorteringshatten</i> og
+            <i>AKG</i> 
+            valgte vi Stein Michaels forslag:
+        </p>
+        
+        <img src="./img/navn-unifi.png" alt="" />
+        
+        <p>Mange alternativer; men heller noe enkelt og gjennomførbart i løpet av
+        fem uker som kan samtidig plotte veien videre.</p>
+        
+        
+    </div>    
+    
+    <!-- -->     
+    
+
+    <div class="slide">    
+        <div class="title">Utforming</div>
+        <ul class="question">
+            <li>Hvordan er systemet strukturert?</li>
+        </ul>
+
+        <p class="quote">For de fleste studenter har <span class="keyword">kollokviesamarbeid</span> en god 
+        effekt på opplevelsen av faglig tilhørighet, motivasjon og mestring. For 
+        å oppmundre til slikt samarbeid og hjelpe studenter med å <span class="keyword">finne 
+        hverandre</span>, ønsker vi å utvikle en prototype av et nettbasert system 
+        populært kalt "kollokviegenerator".</p>
+        
+        <p class="quote">I tillegg til å sette sammen studenter ut fra 
+        <span class="keyword">deres behov</span> (tema, nivå, ønsket tidspunkt, ...), er det ønskelig at systemet inneholder funksjonalitet for å kunne <span class="keyword">be om hjelp</span> 
+        fra gruppelærere, studieveiledere eller andre.</p>
+        
+        <p class="quote">En del av jobben vil bli 
+        å utvikle detaljerte krav til et slikt system, samt 
+        å foreta en grundig gjennomgang av hva som skal til for at <span class="keyword">prototypen</span> 
+        kan utvikles <span class="keyword">til et fullstendig system</span> som kan tas i bruk av hele 
+        insituttet (eller universitetet).</p>
+        
+    </div>
+
+    <!-- -->      
+    
+    <div class="slide">    
+        <div class="title">Studentenes behov</div>
+        <ul class="question">
+            <li>Hvordan kan vi uttrykke studentenes behov?</li>
+            <li>Hvordan skal studentene grupperes etter behov?</li>
+        </ul>
+
+        <p>Hvis studentene skal grupperes etter behov, så bør gruppene
+        være distinkte: altså de må kunne betegnes på andre måter
+        enn vanlige grupper med fag, gruppenummer og klokkeslett
+        <span class="example">(f.eks. INF1010, Gruppe 4)</span>.</p>
+        
+        <img src="./img/emner.png" alt=""/>
+        
+        <p>Her finnes det to veier å gå:</p>
+        
+        <p>Med datalingvistiske termer: <span class="keyword">
+        den preskriptive</span> og <span class="keyword">den deskriptive</span>
+        spesifikasjonen.</p>
+        
+        <p>Den preskriptive spesifikasjonen bestemmer hva som er riktig, mens
+        deskriptive påstår at det organiske dominerer over noe som er syntetisk
+        <span class="example">(tenk nynorsk vs. bokmål)</span></p>   
+        
+    </div>
+
+    <!-- -->       
+    
+    <div class="slide">    
+        <div class="title">Preskriptiv spesifikasjon</div>
+        <ul class="question">
+            <li>Hvordan kan gruppene spesifiserers preskriptivt?</li>
         </ul>
         
+        <p>Fag og tema bestemmes på forhånd.</p>
         
-        <div class="bubble">lage grupper</div>
-        <div class="bubble">forenkle gruppedannelsen</div>
-        <div class="bubble">lage et verktøy som forenkler gruppedannelsen</div>
+        <p>Vi lager et tre studentene kan navigere i og velge det de ønsker.
+        <span class="example">(akkurat som i <span class="keyword">studentweb</span> 
+        er det ikke mulig å lage nye fag eller grupper)</span>.</p>
         
-        <hr />
+        <img src="./img/studweb-tre.png" alt=""/>
         
-        <p class="quote">For de fleste studenter har kollokviesamarbeid en god effekt på 
-        opplevelsen av faglig tilhørighet, motivasjon og mestring. For å 
-        oppmundre til slikt samarbeid og hjelpe studenter med å finne hverandre, 
-        ønsker vi å utvikle en prototype av et nettbasert system populært kalt 
-        "kollokviegenerator". I tillegg til å sette sammen studenter ut fra 
-        deres behov (tema, nivå, ønsket tidspunkt, ...), er det ønskelig at 
-        systemet inneholder funksjonalitet for å kunne be om hjelp fra 
-        gruppelærere, studieveiledere eller andre. En del av jobben vil bli 
-        å utvikle detaljerte krav til et slikt system, <span class="important">samt 
-        å foreta en grundig gjennomgang av hva som skal til for at prototypen 
-        kan utvikles til et fullstendig system som kan tas i bruk av hele 
-        insituttet (eller universitetet)</span>.</p>
+
+    </div>
+
+    <!-- -->       
+    
+    <div class="slide">    
+        <div class="title">Deskriptiv spesifikasjon</div>
+        <ul class="question">
+            <li>Hvordan kan gruppene spesifiserers deskriptivt?</li>
+        </ul>
+        
+        <p>Brukere bestemmer selv hva de kan velge; konsensus belønnes</p>
+
+        <img src="./img/consensus.gif" alt=""/>
         
     </div>
     
     
-    <div class="slide">    
-        <div class="title">Erfaringene</div>
-        
-        <p>Min del av presentasjonen kommer ikke til å handle om</p>
-        
-        <div class="bubble">funksjonalitet</div>
-        
-        <p>eller</p>
-        
-        <div class="bubble">implementasjon</div>
-                
-        <p>Altså, ikke om <span class="emphasized">hva</span>, 
-        <span class="emphasized">hvordan</span> og det tekniske, men snarere om  
-        og <span class="emphasized">hvorfor</span>.</p>
-    
-    </div>    
+    <!-- -->     
 
+    <div class="slide">    
+        <div class="title">Tagger</div>
+        <ul class="question">
+            <li>Hva er en tagg?</li>
+        </ul>
+        
+        <p>Enkleste måten å utrykke det er ved bruk av 
+        <span class="keyword">tagger</span>:</p>
+        
+        <ul>
+        	<li>minimale semantiske enheter med variabel grad av presisjon</li>
+        	<li>enten stor eller liten rekkevidde</li>
+        	<li>akkurat som setninger; <span class="emphasis">men uten syntaks 
+            og morfologi</span></li>
+            <li>brukere må læres opp og oppfordres til 
+            <span class="emphasis">riktig bruk av tagger</span></li>
+            <li>når det ingen standard på hvordan et tagg skal skrives,
+            kan man få ugunstig duplikasjon</li>
+            <li>kan ha overlapp, derfor <span class="keyword">bøtter</span></li>
+        </ul>
+
+    </div>    
+    
+
+    <!-- -->        
+    
+     <div class="slide">    
+        <div class="title">Hybridløsningen</div>
+        <ul class="question">
+            <li>Skal vi ha predefinerte tagger?</li>
+            <li>Skal vi tillate brukerdefinerte tagger?</li>
+            <li>Hvordan takler vi skrivefeil og ulike skrivemåter?</li>
+        </ul>
+        
+        <p>Vi tillater brukerdefinerte grupper, men lar fagansvarlige
+        sette opp enten begrensinger på hva som kan definerers, eller 
+        angi predefinerte forslag for å tvinge data mot en 
+        <span class="emphasis">gyllen standard</span>.</p>
+
+    </div>   
+    
+    <!-- -->     
+
+    <div class="slide">    
+        <div class="title">Paradigmeskiftet (1)</div>
+        <ul class="question">
+            <li>Hvordan endrer dette på dagens samarbeid?</li>
+        </ul>
+        
+        <p>Slik introduserer vi en helt ny måte å samarbeide på.</p>
+        
+        <p class="important">Vi lager grupper for ett eller flere faglige tema,
+        istedenfor å samarbeide etter helt irrelevante faktorer som:</p>
+        
+        <ul>
+            <li>Gruppenummer</li>
+            <li>Hjemmekommune</li>
+            <li>Utseende</li>
+            <li>Kjønn 
+                <span class="example">— rene grupper</span>
+            </li>            
+            <li>Kjønn 
+                <span class="example">— tre gutter hjelper ei jente med obligen</span>
+            </li>
+            <li>Kjønn 
+                <span class="example">— en manlig student kopierer koden til fire andre</span>
+            </li>
+            <li>Felles interesse for 
+                <span class="example">vg.nett</span>, 
+                <span class="example">artige.no</span> og 
+                <span class="example">youtube</span>
+            </li>
+            <li>Studieprogram (?) 
+                <span class="example">— ganske stor tematisk sprik der også på høyere nivå</span>
+            </li>
+        </ul>
+        
+        <p class="example">(ingen fordommer her, kun
+        observasjonene fra `3417 Assembler`)</p>
+        
+    </div>
+
+    <!-- -->      
+    
+    <div class="slide">    
+        <div class="title">Helomvending (2)</div>
+        <ul class="question">
+            <li>Hva er den nye samarbeidsmetoden?</li>
+        </ul>
+
+        <p>Studentene kan danne egne <span class="emphasis">ad-hoc</span> grupper,
+        og oppløse de når samarbeidet ikke lenger er aktuelt: 
+        <span class="example">for eksempel
+        når alle har forstått hvordan man balanserer binære trær</span>.</p>
+        
+        <p>Dette gir mulighet å både utbedre og utforske.</p>
+        
+        <p>Studentene som sliter med bestemte tema kan danne grupper til
+        å se akkurat på de temaene de sliter med.</p>
+        
+        <p>Studentene som vil ha større utfordringer danner grupper
+        hvor de kan samarbeide om mer avanserte deler av pensumet.</p>
+        
+    </div>
+
+    <!-- -->      
+    
+     <div class="slide">    
+        <div class="title">Kunnskapsnivå og hjelp</div>
+        <ul class="question">
+            <li>Hva om studentene trenger hjelp?</li>
+            <li>Kommer <span class="emphasis">Studielaben</span> til å tilby orakelhjelp i år?</li>
+            <li>Hva med de som har lyst å samarbeide med andre på tvers av nivå?</li>
+        </ul>
+
+        <p>Tilbake til stillingsbeskrivelsen: </p>
+        
+        <p class="quote">I tillegg til å sette sammen studenter ut fra 
+        <span class="keyword">deres behov</span> (tema, nivå, ønsket tidspunkt, ...), er det ønskelig at systemet inneholder funksjonalitet for å kunne <span class="keyword">be om hjelp</span> 
+        fra gruppelærere, studieveiledere eller andre.</p>
+        
+        <p class="important">Systemet er tilrettelagt for å be om hjelp fra 
+        orakler eller gruppelærere (i deres arbeidstid).</p>
+        
+        <p></p>
+        
+    </div>
+
+    <!-- -->     
+    
+    <div class="slide">    
+        <div class="title">En ny måte å tilby hjelp på</div>
+        <ul class="question">
+            <li>Hvem skal få rett til hjelp?</li>
+            <li>Hvem skal kunne hjelpe?</li>
+        </ul>
+
+        <p>En av begrensingene som vil rasjonaliserere og forbedre livet
+        til studieoraklene er:</p>
+        
+        <p class="important">Kun kollokviegrupper (med flere enn to medlemmer) skal kunne
+        be om/ha rett til hjelp.</p>
+                
+        <p>Slik introduserer vi en veldig <span class="emphasis">sunn</span> fremgangsmåte for å få hjelp:</p>
+        
+        <ol>
+            <li>Lét etter svaret <span class="keyword">i pensumet</span></li>
+            <li>Lag en gruppe og <span class="keyword">prøv sammen med andre</span></li>
+            <li>Får <span class="emphasis">dere</span> ikke til, tilkall <span class="keyword">et orakel</span></li>
+        </ol>
+        
+        <p>Får ikke instituttet studieorakler, så kan gruppelærere hjelpe 
+        disse gruppene, enten over e-post eller under gruppetimene sine
+        (det er ofte få elever midt og sent i semesteret, selvfølgelig untatt store 
+        intro-emner som INF1010).</p>
+        
+        
+    </div>
+
+    <!-- -->      
+    
     <div class="slide">    
         <div class="title">Optimal gruppestørrelse</div>
 		
+        <p>Per dags dato er algoritmen ganske lite fleksibel i forhold
+        til antall studenter per gruppe. Verdien er global og ikke
+        kan fastsettes per gruppe/bøtte.</p>
+        
         <p>Etter et par samtaler med gruppelærere fant vi ut at den beste 
         størrelsen for en <span>kollokviegruppe</span>, altså en gruppe uten 
         bestemte krav om størrelse eller tema er:</p>
@@ -94,6 +435,8 @@
         
     </div>
 
+    <!-- -->      
+    
     <div class="slide">    
         <div class="title">Frafall</div>
 		
@@ -118,6 +461,8 @@
         spesialiserer seg på unge informatikere.</p>
 		
     </div>
+
+    <!-- -->  
     
     <div class="slide">    
         <div class="title">Konsekvensene av frafall</div>
@@ -133,9 +478,11 @@
         kvitt de studentene som kan potensielt være kontraproduktive og hindre andre
         i å føle komfort og mestring.</p>
         
-        <p>Så et bedre spørsmål er:</p>
+        <p>Så et bedre spørsmål er →</p>
         
     </div>  
+    
+    <!-- -->      
     
     <div class="slide">    
         <div class="title">
@@ -161,74 +508,16 @@
         
     </div>
     
-    <div class="slide">    
-        <div class="title">Gruppedannelse</div>
-		
-        <ul class="question">
-            <li>Hvordan gjør vi forskjell på gruppene?</li>
-            <li>Hvordan bestemmer vi at to studenter hører til i den samme gruppen?</li>
-        </ul>  
-        
-		<p>I utgangspunktet hadde vi to alternative tilnærmingsmåter:</p>
-        
-        <ul>
-            <li>Tvinge brukeren til å velge fra en bestemt hierarki av fag og emner 
-            (studweb)</li>
-            <li>La brukeren definere ønsker bestående av nøkkelord</li>
-        </ul>
-        
-        <p>For og i mot?</p>
-        
-        <p>For taggene:</p>
-        
-        <ul>
-            <li>Brukere har større frihet til å samarbeide om akkurat hva de vil: 
-            alt avhenger av hvordan de beskriver det</li>
-            <li>Dannelse av useriøse ønsker blir marginalt pga. innlogging
-            med universitetets identifikasjon.</li>
-        </ul>
-        
-    </div>
+    <!-- -->     
     
     <div class="slide">    
-        <div class="title">Taggene</div>
-        
-        <p>Ja. Vi argumenterer slik:</p>
-        
-        <p>Vanlige setninger, i sin muntlig og skriftlig form, har to aspekter som jeg
-        mener er ikke nødvendige for å formidle hva en gruppe samarbeider om og hva
-        en bruker vil samarbeide om.</p>
-        
-        <p>Disse aspektene er:
-            <ul>
-                <li>SYNTAKS</li>
-                <li>MORFOLOGI</li>
-            </ul>
-        </p>
-        
+        <div class="title">Bøtter</div>
+        <ul class="question">
+            <li>Hvilket problem løser bøttene?</li>
+            <li>Hvilke muligheter får fagansvarlige hvis definerbare
+            bøtter implementeres?</li>
+        </ul>
 
-        
-        <p>I systemet og i prototypen er SYNTAKSEN minimal: komma skiller taggene. 
-        Mellomrommet er tillatt. Linjeskift betraktes som komma.</p>
-        
-        <p>MORFOLOGIEN er derimot brukerbestemt og må så å si elimineres for at systemet skal være effektiv.</p>
-        
-        <ol>
-            <li>Taggene kan være obligatoriske ved hjelp av markører som utropstegn.</li>
-            <li>Taggene kan danne isolerte bøtter (sorteringspartisjoner): dvs. ønskene
-            kan være sortert etter et bestemt tagg og deretter bli satt sammen adskilt fra andre bøtter.
-            Ved siden av spesifiserte eksisterer en <span>default</span>-bøtte for ønskene som skal behandles sammen.
-            </li>
-			<li>Taggene kan danne isolerte bøtter (sorteringspartisjoner): dvs. ønskene
-            kan være sortert etter et bestemt tagg og deretter bli satt sammen adskilt fra andre bøtter.
-            Ved siden av spesifiserte eksisterer en <span>default</span>-bøtte som ikke 
-            </li>
-            <li>Taggene gir brukeren en følelse av større kontroll over systemet og kan derfor
-            legge opp til at systemet brukes på andre måter enn det som er ment. Noe som er bra, siden
-            overgang fra en bruksmåte til en annen er lett.
-            </li>
-        </ol>    
-       	
         <p>Et mål med videreutviklingen er å lage definerbare bøtter slik at et fag som
         for eksempel INF2220 kan få en egen bøtte der emneadministrasjonen/fagansvarlig skal
         kunne bestemme følgende parametere:</p>
@@ -244,27 +533,43 @@
         </ul>
         
     </div>
+
+    <!-- -->
     
     <div class="slide">    
-        <div class="title">Skrivefeil i brukerdefinerte tagger</div>
+        <div class="title">Kommunikasjon</div>
         
-        <ul class="question">
-            <li>Skrivefeil kan være en betydelig frustrasjonskilde for brukeren 
-            og systemet, spesielt hvis man ikke kan redigere ønskene. Hvordan 
-            takler prototypen skrivefeil?</li>
-        </ul>  
+        <p>I prototypen skjer alt av kommunikasjonen mellom brukere
+        via e-post.</p>
         
-		<p>TAGIT DEMO</p>
+        <p>Allerede en pålitelig måte å samarbeide og kommunisere på,
+        mindre funksjonalitet i systemet.</p>
         
-    </div>    
+        <p>Utfordring med dagens løsning: ingen garantier for at den
+        som trekker seg fra gruppen vil slutte å motta mail.</p>
+        
+        <p>Løsning: en e-mail proxy som gir hver gruppe en
+        <span class="keyword">alias</span>-adresse. For eksempel: <span class="example">gruppe1551732249@unifi.ifi.uio.no</span></p>
+        
+        <p>Andre løsninger: intern chattesystem for hver gruppe. Innebærer
+        at brukeren må inn på siden for å følge med i samtalen.</p>
+        
+        
+        
+    </div>   
     
+    
+    <!-- -->    
+
     <div class="slide">    
         <div class="title">Distansfunksjonen</div>
         
-        <p>Denne funksjonen inneholder reglene for hvordan fohold mellom ønskene verdsettes.
+        <p>Denne funksjonen inneholder reglene for hvordan foholdet mellom ønskene verdsettes.
         De gir emneadministrasjonen kontroll over hvordan gruppesammensetningen skjer.
         Dette er spesielt aktuelt i forhold til mindre emner som har få studenter, men
-        må danne grupper (eller) par selv om likheten er svært lav.</p>
+        må danne grupper (eller) par* selv om likheten er svært lav.</p>
+        
+        <p>Kan også tillate tilfeldig sammensetning.</p>
         
         <p>Gjennom denne kan man også introdusere et synonymlag: et nettverk som avgjør om taggene
         Oppgave 2.2 og Kapittel 2 handler om _nesten_ det samme.</p>
@@ -272,60 +577,107 @@
         <p>Slik kan man danne grupper av ønsker som semantisk sett ligger tett mot hverandre,
         men syntaktisk er usammenlignbare.</p>
         
-        <p>Dette laget kan også benyttes for å takle skrivefeil eller de ulike skrivemåtene (problemstilling),
-        for eksempel for fag:</p>
+    </div>    
+
+    <!-- -->     
+    
+    <div class="slide"></div>
+    
+    <!-- -->     
+
+    <div class="slide">    
+        <div class="title">Veien videre...</div>
+        <ul class="question">
+            <li>Hvilke frister skal prosjektet ha?</li>
+            <li>Når skal prosjektet testes?</li>
+        </ul>
+            
+        <p>Hvis prosjektet skal videreutvikles må vi bli enige om 
+        utviklingsstadier og frister.</p>
         
-        <img />
-		
-        <p>Men dette er ikke implementert i prototypen.</p>
+        <p>Faget som er aktuelt for testing er <span class="emphasis">INF1080</span>.</p>
+        
+        <p>Beste tidspunkt for testing i midten av semesteret eller i forberedelsestiden
+        før eksamen.</p>
+        
+        <p>Må ha veiledningsmøtene og tilbakemelding.</p>
+        
+        <p><span class="emphasis">Martin</span> forlater prosjektet, men er tilgjengelig for mindre oppgaver
+        som ikke kommer i veien for masteroppgaven hans.</p>
+        
+        <p><span class="emphasis">Ilya</span> har søkt om å videreutvikle prosjektet som en del av
+        <span class="keyword">INF3331</span> frem til 2013.</p>
+        
+        <p>Ifølge foreleseren er det mulig å verve flere studenter til dette prosjektet</p>
+        
+        <img src="./img/inf3331-soknad.png" alt="" />
         
     </div>
+
+    <!-- -->      
     
     <div class="slide">    
-        <div class="title">Ønskegrensesnittet</div>
-        
+        <div class="title">Tekniske krav</div>
         <ul class="question">
-            <li>Hvordan begrenser grensesnittet de inkommende ønskene?</li>
-        </ul>          
+            <li>Hva skal til for at prototypen skal kunne testes?</li>
+        </ul>
         
-		<p>Prototypen begrenser brukerinput med følgende _fire_ faktorer:</p>
+        <p>Prototype på djangos testeserver er ikke det samme som på
+        en offentlig produksjonsserver.</p>
         
         <ol>
-        	<li>Antall tagger per ønske (min/maks)</li>
-        	<li>Hva som er FORHÅNDSBESTEMT og hva som er FORHÅNDSDEFINERT SOM ET ALTERNATIV</li>
-        	<li>Mellomrom og komma, to perspektiver:
-            	<ul>
-                	<li>hva skiller taggene (komma)</li>
-                	<li>hva er tillat i taggene (komma, spesialtegn, markører... )</li>                    
-                </ul>
-            </li>
-        	<li>Lowercase/uppercase? (Vet noen hva det heter på norsk?)</li>
+        	<li>Lisens og pakkelisenser</li>
+        	<li>Personvern</li>
+        	<li>Server <span class="emphasis">— ansvar for oppdatering av serverløsningen?</span></li>
+        	<li>Database</li>
+        	<li><span class="keyword">Weblogin</span></li>
+            <li>Kommunikasjon <span class="emphasis">— ta en avgjørelse</span></li>
+            <li>Sikring av <span class="keyword">djangorestframework</span></li>
+            <li>Administrator- og orakelgrensesnittet</li>
+            <li>Sikkerhet</li>
         </ol>
         
-        <p>? </p>
-        
+        <p>Andre issues som må fikses før deployment ligger i vår github repository </p>
+        <a style="font-size: 1.5em;" href="https://github.com/unifi/unifi/issues?state=open">https://github.com/unifi/unifi/issues?state=open</a>
 
-        
-        
     </div>
+
+    <!-- -->      
     
     <div class="slide">    
-        <div class="title">Kan det være aktuelt å innføre et fast antall tagger 
-        alle ønskene _skal_ ha? Ikke mindre/ikke mer?</div>
-		
-        <p>Dette avhenger av distansfunksjonen. Derfor bør det ikke innføres globalt.</p>
+        <div class="title">Etter testingen...</div>
+        <ul class="question">
+            <li>Hvordan skal vi fortsette å utvikle systemet?</li>
+        </ul>
+
+        <p>Bør ikke overbelastes med features og må fortsatt være
+        et <span class="keyword">minimalt system</span>.</p>
         
-        <p>Grunnen til at det ikek skal innføres globalt er at dagens distansfunksjon
-		er basert på Jaccard-metrikken som slår lavt ut i mot de ønskene som er altfor
-        detaljerte: kravet om flere tagger enn det som er naturlig vil føre til at brukere
-        vil forsøke å fylle ut kvoten med altfor spesifikke tagger. Slik vil ønsket deres aldri
-        bli matchet.</p>
+        <p>Men kan være ubrukelig på prototypenivå.</p>
         
-        <p>Gi eksempel</p>
+        <ol>
+        	<li>Mer fleksibel matcherammeverk</li>
+        	<li>Definerbare bøtter</li>
+        	<li>Søkbare grupper med mulighet å melde seg i</li>
+            <li>En uavhengig matchetjeneste</li>
+            <li>Brukerroller</li>
+            <li>Synonymer (håndtering av skrivefeil)</li>
+        </ol>        
         
     </div>
 
+    <!-- -->     
+    
+    <div class="slide">
+        <div class="title">Takk!</div>
+        <img src="./img/fortress.jpg" alt="" />
+    </div>
+    
+    
 </div>
+
+
+
 <!-- presentation -->
 
 </body>
