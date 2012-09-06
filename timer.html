@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+	<title>Presentation Timer</title>
+        
+	<script src="jquery.min.js" type="text/javascript"></script>
+   	<script src="jquery.countdown.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+    
+            /* initializing timer */
+            $(".time").countdown(
+                { since: new Date(), compact: true, format: "MS" }
+            );
+            
+            /* pausing and resuming */
+            var timerState = true;
+            $(".time").on( 'click', function() {
+                if ( timerState ) {
+                    timerState = false;
+                    $(this).countdown('pause');
+                    $(this).fadeTo( 1000, 0.5 );
+                } else {
+                    timerState = true;
+                    $(this).countdown('resume');
+                    $(this).fadeTo( 1000, 1.0 );
+                }
+            })
+        });
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: white;
+        }
+    
+        .time {
+            padding: 5%;
+            text-align: center;
+            font-size: 20em;
+            font-family: "Consolas", monospace, fixed;
+            color: #660000;
+            cursor: pointer;
+        }
+    </style>    
+    
+</head>
+
+<body>
+
+<div class="time"></div>
+
+</body>

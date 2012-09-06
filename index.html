@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+	<title>UNIFI</title>
+
+	<link href="presentation.css" type="text/css" rel="stylesheet" />
+
+	<script src="jquery.min.js" type="text/javascript"></script>
+    <script src="fathom.js" type="text/javascript"></script>
+   	<script src="jquery.countdown.js" type="text/javascript"></script>	
+   	<script src="underscore.js" type="text/javascript"></script>   
+    <script src="presentation.js" type="text/javascript"></script>
+</head>
+
+
+
+<body>
+
+<div class="time"></div>
+
+<!-- presentation -->
+<div id="presentation">
+
+    <div class="slide">
+        <div class="section">Kollokviegenerator, <br />sommer 2012</div>
+    </div>
+
+    <div class="slide">    
+        <div class="title">Valg av navn</div>
+    </div>
+
+    <div class="slide">    
+        <div class="title">Målet med prosjektet</div>
+        
+        <ul class="question">
+            <li>Hva var målet med prosjektet?</li>
+        </ul>
+        
+        
+        <div class="bubble">lage grupper</div>
+        <div class="bubble">forenkle gruppedannelsen</div>
+        <div class="bubble">lage et verktøy som forenkler gruppedannelsen</div>
+        
+        <hr />
+        
+        <p class="quote">For de fleste studenter har kollokviesamarbeid en god effekt på 
+        opplevelsen av faglig tilhørighet, motivasjon og mestring. For å 
+        oppmundre til slikt samarbeid og hjelpe studenter med å finne hverandre, 
+        ønsker vi å utvikle en prototype av et nettbasert system populært kalt 
+        "kollokviegenerator". I tillegg til å sette sammen studenter ut fra 
+        deres behov (tema, nivå, ønsket tidspunkt, ...), er det ønskelig at 
+        systemet inneholder funksjonalitet for å kunne be om hjelp fra 
+        gruppelærere, studieveiledere eller andre. En del av jobben vil bli 
+        å utvikle detaljerte krav til et slikt system, <span class="important">samt 
+        å foreta en grundig gjennomgang av hva som skal til for at prototypen 
+        kan utvikles til et fullstendig system som kan tas i bruk av hele 
+        insituttet (eller universitetet)</span>.</p>
+        
+    </div>
+    
+    
+    <div class="slide">    
+        <div class="title">Erfaringene</div>
+        
+        <p>Min del av presentasjonen kommer ikke til å handle om</p>
+        
+        <div class="bubble">funksjonalitet</div>
+        
+        <p>eller</p>
+        
+        <div class="bubble">implementasjon</div>
+                
+        <p>Altså, ikke om <span class="emphasized">hva</span>, 
+        <span class="emphasized">hvordan</span> og det tekniske, men snarere om  
+        og <span class="emphasized">hvorfor</span>.</p>
+    
+    </div>    
+
+    <div class="slide">    
+        <div class="title">Optimal gruppestørrelse</div>
+		
+        <p>Etter et par samtaler med gruppelærere fant vi ut at den beste 
+        størrelsen for en <span>kollokviegruppe</span>, altså en gruppe uten 
+        bestemte krav om størrelse eller tema er:</p>
+        
+        <div class="bubble"><span class="integer">3</span> studenter</div>
+        
+        <p>Tillater effektiv avstemning om interne spørsmål (alltid en avgjørende stemme).</p>
+        
+        <p>Grupper større enn tre har tendens til å være ineffektive,
+        men kan allikevel dannes med hensyn til frafall.</p>
+        
+    </div>
+
+    <div class="slide">    
+        <div class="title">Frafall</div>
+		
+		<p>Behovet for kollokviegeneratoren understreker et viktig faktum: 
+        det sosiale samarbeidet og deltakelse i relevante aktiviteter er marginalt.</p>
+        
+        <p>Undersøkelsene som gjennomføres blant aktive studenter sier lite om de faktiske
+        forhold. De er en feil målgruppe for undersøkelsene fordi at de</p>
+        
+		<ul>
+            <li>allerede har en omgangskrets</li>
+            <li>omgangskretsen er naturlig tilpasset deres nivå</li>
+            <li>føler tilknytning, deltar aktivt i gruppetimene og forelesningene</li>
+            <li>har i utgangspunktet ikke behov for et system som UNIFI</li>            
+        </ul>
+		
+		<p>Den ekte målgruppen kan være ukomfortabel med samarbeid. Dette gjør at de gruppene
+        vi danner er aldri perfekte og kan lett falle i fra hverandre hvis medlemene ikke
+        opplever høy grad av tilhørighet.</p>
+        
+        <p>Grunnene til frafall er en kompleks affære og må diskuteres av psykologer som
+        spesialiserer seg på unge informatikere.</p>
+		
+    </div>
+    
+    <div class="slide">    
+        <div class="title">Konsekvensene av frafall</div>
+        
+        <ul class="question">
+            <li>Hvordan hindrer vi frafall?</li>
+        </ul>
+		
+		<p>Man kan ikke se på frafall i gruppene som på noe utelukkende negativt.
+        Frafall har også en positiv side:</p>
+        
+        <p>Frafall er gruppens immunforsvar, en naturlig tilpassningsprosess. Gruppen blir
+        kvitt de studentene som kan potensielt være kontraproduktive og hindre andre
+        i å føle komfort og mestring.</p>
+        
+        <p>Så et bedre spørsmål er:</p>
+        
+    </div>  
+    
+    <div class="slide">    
+        <div class="title">
+        Tiltak mot frafall
+        </div>
+		
+        <ul class="question">
+            <li>Bør frafallet hindres?</li>
+        </ul>        
+        
+		<p>Nei.</p>
+        
+        <p>Men vi kan hidre de negative sidene med frafall: altså det at det
+        blir for få i gruppen.</p>
+        
+        <p>Derfor er det optimalt å innføre en standard størrelse på 4 studenter.</p>
+        
+        <p>3 er vår opprinnelige optimale størrelsen, 
+        så ved frafall av en student (noe som ofte skjer rett etter dannelsen)
+        er gruppestørrelsen fortsatt optimal.</p>
+        
+        <p>... mens 2 studenter (ved frafall av 2 andre) er fortsatt en gruppe.</p>
+        
+    </div>
+    
+    <div class="slide">    
+        <div class="title">Gruppedannelse</div>
+		
+        <ul class="question">
+            <li>Hvordan gjør vi forskjell på gruppene?</li>
+            <li>Hvordan bestemmer vi at to studenter hører til i den samme gruppen?</li>
+        </ul>  
+        
+		<p>I utgangspunktet hadde vi to alternative tilnærmingsmåter:</p>
+        
+        <ul>
+            <li>Tvinge brukeren til å velge fra en bestemt hierarki av fag og emner 
+            (studweb)</li>
+            <li>La brukeren definere ønsker bestående av nøkkelord</li>
+        </ul>
+        
+        <p>For og i mot?</p>
+        
+        <p>For taggene:</p>
+        
+        <ul>
+            <li>Brukere har større frihet til å samarbeide om akkurat hva de vil: 
+            alt avhenger av hvordan de beskriver det</li>
+            <li>Dannelse av useriøse ønsker blir marginalt pga. innlogging
+            med universitetets identifikasjon.</li>
+        </ul>
+        
+    </div>
+    
+    <div class="slide">    
+        <div class="title">Taggene</div>
+        
+        <p>Ja. Vi argumenterer slik:</p>
+        
+        <p>Vanlige setninger, i sin muntlig og skriftlig form, har to aspekter som jeg
+        mener er ikke nødvendige for å formidle hva en gruppe samarbeider om og hva
+        en bruker vil samarbeide om.</p>
+        
+        <p>Disse aspektene er:
+            <ul>
+                <li>SYNTAKS</li>
+                <li>MORFOLOGI</li>
+            </ul>
+        </p>
+        
+
+        
+        <p>I systemet og i prototypen er SYNTAKSEN minimal: komma skiller taggene. 
+        Mellomrommet er tillatt. Linjeskift betraktes som komma.</p>
+        
+        <p>MORFOLOGIEN er derimot brukerbestemt og må så å si elimineres for at systemet skal være effektiv.</p>
+        
+        <ol>
+            <li>Taggene kan være obligatoriske ved hjelp av markører som utropstegn.</li>
+            <li>Taggene kan danne isolerte bøtter (sorteringspartisjoner): dvs. ønskene
+            kan være sortert etter et bestemt tagg og deretter bli satt sammen adskilt fra andre bøtter.
+            Ved siden av spesifiserte eksisterer en <span>default</span>-bøtte for ønskene som skal behandles sammen.
+            </li>
+			<li>Taggene kan danne isolerte bøtter (sorteringspartisjoner): dvs. ønskene
+            kan være sortert etter et bestemt tagg og deretter bli satt sammen adskilt fra andre bøtter.
+            Ved siden av spesifiserte eksisterer en <span>default</span>-bøtte som ikke 
+            </li>
+            <li>Taggene gir brukeren en følelse av større kontroll over systemet og kan derfor
+            legge opp til at systemet brukes på andre måter enn det som er ment. Noe som er bra, siden
+            overgang fra en bruksmåte til en annen er lett.
+            </li>
+        </ol>    
+       	
+        <p>Et mål med videreutviklingen er å lage definerbare bøtter slik at et fag som
+        for eksempel INF2220 kan få en egen bøtte der emneadministrasjonen/fagansvarlig skal
+        kunne bestemme følgende parametere:</p>
+        
+        <ul>
+        	<li>hvor mange tagger kan et ønske ha? (tagger per ønske)</li>
+        	<li>er brukerdefinerte tagger tillatt? (aktuelt for avstemninger a la Doodle)</li>
+        	<li>hva er den minimale likheten mellom ønskene for at de skal danne en gruppe?</li>
+        	<li>hva er den minimale/den maksimale gruppestørrelsen?</li>
+        	<li>hvordan fungerer sammensettings/distansfunksjonen som bestemmer likhet? 
+            (her er det mulig å legge inn synonymforhold mellom taggene, blir nevnt senere)</li>
+            <li>og eventuelt: hvilke underbøtter skal denne bøtten ha?</li>
+        </ul>
+        
+    </div>
+    
+    <div class="slide">    
+        <div class="title">Skrivefeil i brukerdefinerte tagger</div>
+        
+        <ul class="question">
+            <li>Skrivefeil kan være en betydelig frustrasjonskilde for brukeren 
+            og systemet, spesielt hvis man ikke kan redigere ønskene. Hvordan 
+            takler prototypen skrivefeil?</li>
+        </ul>  
+        
+		<p>TAGIT DEMO</p>
+        
+    </div>    
+    
+    <div class="slide">    
+        <div class="title">Distansfunksjonen</div>
+        
+        <p>Denne funksjonen inneholder reglene for hvordan fohold mellom ønskene verdsettes.
+        De gir emneadministrasjonen kontroll over hvordan gruppesammensetningen skjer.
+        Dette er spesielt aktuelt i forhold til mindre emner som har få studenter, men
+        må danne grupper (eller) par selv om likheten er svært lav.</p>
+        
+        <p>Gjennom denne kan man også introdusere et synonymlag: et nettverk som avgjør om taggene
+        Oppgave 2.2 og Kapittel 2 handler om _nesten_ det samme.</p>
+        
+        <p>Slik kan man danne grupper av ønsker som semantisk sett ligger tett mot hverandre,
+        men syntaktisk er usammenlignbare.</p>
+        
+        <p>Dette laget kan også benyttes for å takle skrivefeil eller de ulike skrivemåtene (problemstilling),
+        for eksempel for fag:</p>
+        
+        <img />
+		
+        <p>Men dette er ikke implementert i prototypen.</p>
+        
+    </div>
+    
+    <div class="slide">    
+        <div class="title">Ønskegrensesnittet</div>
+        
+        <ul class="question">
+            <li>Hvordan begrenser grensesnittet de inkommende ønskene?</li>
+        </ul>          
+        
+		<p>Prototypen begrenser brukerinput med følgende _fire_ faktorer:</p>
+        
+        <ol>
+        	<li>Antall tagger per ønske (min/maks)</li>
+        	<li>Hva som er FORHÅNDSBESTEMT og hva som er FORHÅNDSDEFINERT SOM ET ALTERNATIV</li>
+        	<li>Mellomrom og komma, to perspektiver:
+            	<ul>
+                	<li>hva skiller taggene (komma)</li>
+                	<li>hva er tillat i taggene (komma, spesialtegn, markører... )</li>                    
+                </ul>
+            </li>
+        	<li>Lowercase/uppercase? (Vet noen hva det heter på norsk?)</li>
+        </ol>
+        
+        <p>? </p>
+        
+
+        
+        
+    </div>
+    
+    <div class="slide">    
+        <div class="title">Kan det være aktuelt å innføre et fast antall tagger 
+        alle ønskene _skal_ ha? Ikke mindre/ikke mer?</div>
+		
+        <p>Dette avhenger av distansfunksjonen. Derfor bør det ikke innføres globalt.</p>
+        
+        <p>Grunnen til at det ikek skal innføres globalt er at dagens distansfunksjon
+		er basert på Jaccard-metrikken som slår lavt ut i mot de ønskene som er altfor
+        detaljerte: kravet om flere tagger enn det som er naturlig vil føre til at brukere
+        vil forsøke å fylle ut kvoten med altfor spesifikke tagger. Slik vil ønsket deres aldri
+        bli matchet.</p>
+        
+        <p>Gi eksempel</p>
+        
+    </div>
+
+</div>
+<!-- presentation -->
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+body {
+    font-family: Georgia; 
+    padding: 2em 4em 2em 3em;
+    background-color: #CCC;
+    background-image: url('http://subtlepatterns.com/patterns/tex2res5.png');
+    z-index: 1;
+}  
+
+.time, .floater {
+ 	position: fixed;
+    bottom: 2em;
+    right: 1.5em;
+    font-size: 2em;
+    color: white;
+    border-radius: 0.4em;
+    -moz-border-radius: 0.4em;    
+    background-color: rgba( 0, 0, 0, 0.8 );
+    padding: 0.8em;
+    font-family: "Consolas", monotype;
+    cursor: pointer;
+    z-index: 255;
+}
+
+.section {
+    text-align: center;
+    font-size: 400%;
+    font-style: italic;
+    padding: 10% 10% 10% 10%;
+}
+
+
+.slide {
+    background-color: #FFF;
+    
+    -moz-box-shadow: 0px 10px 15px #666;	
+    -webkit-box-shadow: 0px 10px 15px #666;
+    box-shadow: 0px 10px 15px #666;
+    
+    margin: 2em 4em 4em 4em;
+    
+    padding: 4em 4em 6em 6em;
+    width: 55%;
+    min-height: 20em;
+    
+    border-radius: 0.25em;
+    -moz-border-radius: 0.25em; 
+    position: relative;
+    z-index: 1;
+}
+
+.slide a {
+    font-size: 1.5em;
+}
+
+
+.slide p {
+ 	padding: 1% 40% 1% 0em;
+    font-size: 1.2em;
+}
+
+.slide p .emphasized {
+    font-style: italic;
+}
+
+.slide ul, .slide ol {
+ 	padding-right: 30%;
+    padding-left: 2em;
+}
+
+.slide .title {
+    max-width: 80%;    
+    color: #900;
+    font-family: Georgia;
+    font-size: 4.1em;
+    font-style: italic;
+    padding-bottom: 2%;
+    overflow: auto;
+    z-index: 60;
+}
+
+.slide .enumerator {
+    font-size: 5em;
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    color: #EEE;
+    z-index: 56;
+}
+
+.quote {
+    padding: 0.2em 0em 0.2em 1.25em;
+    margin: 2em 1em 3em 1em;
+    font-style: italic;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+.quote .important {
+    font-weight: bold;
+}
+
+.bubble {
+	font-size: 1.5em;
+    font-weight: bold;
+    font-family: arial, helvetica, sans;
+    text-align: center;
+    
+    margin: 0.5em 30% 0.5em 30%;
+    padding: 1em;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    
+    -moz-box-shadow: 0px 5px 5px rgba( 0, 0, 0, 0.4 )	
+    -webkit-box-shadow: 0px 5px 5px rgba( 0, 0, 0, 0.4 );
+    box-shadow: 0px 5px 5px rgba( 0, 0, 0, 0.4 );
+    
+    background-color: rgba( 0, 0, 0, 0.05 );
+    z-index: 120;
+}
+
+.question {
+    font-style: italic;
+    font-size: 1.4em;
+    margin-bottom: 7%;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.integer {
+    color: rgb( 164, 0, 0 );
+}
+
+.centered {
+    text-align: center;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+ol ul li {
+    font-size: 0.5em;
+    padding-left: 0em;
+}
+
+ul ol li {
+    font-size: 0.5em;
+    padding-left: 0em;
+}
+
+.example {
+    font-style: italic;
+}
+
+.important {
+    font-weight: bold;
+}
+
+.keyword {
+    border-bottom: 0.08em dashed grey;
+    font-style: italic;
+    
+}
+
+hr {
+    border: 0.1em solid rgba(0,0,0,0.6);
+    margin: 3em 0em 3em 0em;
+}
+
+/* ---------------------------------- */
+
+
+.introduction {}
+
+
+
+
+.statement {
+    
+    max-width: 80%;
+    
+    color: #900;
+    font-family: Georgia;
+    font-size: 2.5em;
+    font-style: italic;
+    
+    /*padding-top: 1.5em;*/
+    padding-bottom: 0.5em;
+}
+
+.statement .enumerator {
+    font-size: 1.2em;
+}
+
+.consequence {
+    max-width: 75%;        
+}
+
+.consequence .header {
+    font-weight: bold;
+}
+
+
+
+.argument {
+    padding: 1em 0em 2em 0em;
+}
+
+.argument p {
+    width: 50%;
+    padding-left: 5em;
+    text-align: justify;
+}
+
+.columns {
+    width: 80%;
+    min-height: 4em;
+    overflow: visible;
+    display: block;
+}
+
+.column {
+    padding: 2em 1em 4em 1em;
+    width: 28%;
+    float: left;
+}
+
+.column .header {
+    
+}
+
+.illustration {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+
+
+img {
+    width: 63%;
+    margin: 3em 0.5em 0.5em 0.5em;
+    padding: 0.4em;
+    border: 0.6em solid #CCC;
+    border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    text-align: center;
+}
+
+.master, .apprentice, .client, .operator, .plus {
+    border-radius: 0.35em;
+    -moz-border-radius: 0.35em;
+    font-size: 1.0em;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    color: #FFF;
+    font-weight: bold;
+    font-family: Arial;
+    height: 1.5em;
+    margin: 0.2em;
+    cursor: pointer;
+}
+
+.plus {
+    background-color: #DDD;
+    color: #000;
+    padding: 0.8em;
+}
+
+.master {
+    background-color: #900;
+}
+
+.apprentice {
+    background-color: #039;
+}
+
+.client {
+    background-color: #999;   
+}
+.operator {
+    color: #000;   
+}
+
+.group {
+    min-height: 4.5em;
+}
+
+.introduction {
+    margin: 0em 30% 2em 5%;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.introduction .header {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.terminology {
+    width: 80%;
+}
+
+.terminology .term {
+    color: #900;
+    font-family: Georgia;
+    font-size: 1.2em;
+    font-style: italic; 	   
+}
+
+
+
+.bubble .header {
+    text-align: left;    
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.bubble .shortlist {
+
+}
+
+.bubble .target {
+    color: #999;
+    float: left;
+    padding-right: 0.3em;
+}
+
+.bubble .members, .bubble .slots {
+    text-align: left;
+    max-height: 2em;
+    padding: 1.2em 0.3em 0.3em 0.3em;
+}
+
+.bubble .members {
+    width: 55%;
+    float: left;
+}
+
+.bubble .slots {
+
+    float: right;
+}
+
+.bubble .footer {
+}
+
+.bubble .description {
+    font-style: italic;
+    text-align: left;
+    margin: 0.8em 0 2em 0;
+    padding: 0.9em;
+}
+.bubble .description a {
+    border-radius: 0.15em;
+    background-color: #D7D7D7;
+    -moz-border-radius: 0.15em;
+    font-size: 1.0em;
+    font-family: Arial, sans;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+    font-style: normal;
+}
